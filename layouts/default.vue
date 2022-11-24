@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <Header/>
     <Nuxt/>
   </div>
 </template>
@@ -39,7 +40,34 @@ export default {
   --light-gray-color: #C4C4C4;
   --gray-color: #F2F2F2;
   --dark-gray-color: #828282;
+  --yellow-color: #ffa200;
   background-color: var(--white-color);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1390px;
+}
+
+.link-hover {
+  color: var(--black-color);
+  transition: color .3s;
+}
+
+.link-hover:hover {
+  color: var(--yellow-color);
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 0;
+  }
 }
 
 </style>

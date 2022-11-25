@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="header__wrapper wrapper">
+    <div class="header__container wrapper">
       <nuxt-link
         exact
         to="/"
@@ -10,7 +10,9 @@
 
       <nav class="header__navigation">
         <ul class="header__nav-links">
-          <li v-for="item in links" :key="item.name">
+          <li
+            v-for="item in links"
+            :key="item.name">
             <nuxt-link
               exact
               :to="item.link"
@@ -30,14 +32,14 @@
 </template>
 
 <script>
-import {userAccountNavigationLinks} from "assets/constants/navigationLinks";
+import {navigationLinks} from "assets/constants/navigationLinks";
 
 export default {
   name: "Header",
 
   computed: {
     links() {
-      return userAccountNavigationLinks;
+      return navigationLinks.user;
     }
   }
 }
@@ -52,8 +54,8 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
-.header__wrapper {
-  padding: 12px 0;
+.header__container {
+  padding: 8px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +123,11 @@ export default {
 }
 
 @media (max-width: 767px) {
-  .header__wrapper {
+  .header {
+    box-shadow: none;
+  }
+
+  .header__container {
     padding: 18px 20px 26px;
   }
 

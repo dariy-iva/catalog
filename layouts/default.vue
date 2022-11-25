@@ -1,7 +1,12 @@
 <template>
   <div class="page">
     <Header/>
-    <Nuxt/>
+
+    <main class="content">
+      <Nuxt/>
+    </main>
+
+    <Footer/>
   </div>
 </template>
 
@@ -41,7 +46,13 @@ export default {
   --gray-color: #F2F2F2;
   --dark-gray-color: #828282;
   --yellow-color: #ffa200;
+  --red-color: #ff0000;
   background-color: var(--white-color);
+}
+
+.content {
+  padding-top: calc(26px + 40px);
+  flex-grow: 1;
 }
 
 .wrapper {
@@ -65,6 +76,10 @@ export default {
 }
 
 @media (max-width: 767px) {
+  .content {
+    padding-top: 68px;
+  }
+
   .wrapper {
     margin: 0;
   }

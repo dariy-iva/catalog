@@ -61,11 +61,10 @@ export default {
 }
 
 .link-hover {
-  color: var(--black-color);
   transition: color .3s;
 }
 
-.link-hover:hover {
+a.link-hover:hover {
   color: var(--yellow-color);
 }
 

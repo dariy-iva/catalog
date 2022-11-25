@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'catalog',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },

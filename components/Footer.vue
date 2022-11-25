@@ -88,6 +88,7 @@ export default {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: .04em;
+  color: var(--brand-black-color);
 }
 
 .footer__nav-links {

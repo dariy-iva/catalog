@@ -133,8 +133,8 @@ export default {
   -webkit-mask-position: center;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url("static/images/icons/close.svg");
-  -webkit-mask-image: url("static/images/icons/close.svg");
+  mask-image: url("static/./images/icons/close.svg");
+  -webkit-mask-image: url("static/./images/icons/close.svg");
   background-color: var(--light-gray-color);
   cursor: pointer;
   transition: background-color .3s;
@@ -161,5 +161,9 @@ export default {
   color: var(--white-color);
   background-color: var(--yellow-color);
   outline: none;
+}
+
+.form-subscription__submit:disabled:hover {
+  cursor: not-allowed;
 }
 </style>

@@ -68,6 +68,7 @@ export default {
   letter-spacing: .04em;
   text-transform: uppercase;
   text-decoration: none;
+  color: var(--black-color);
 }
 
 .header__navigation {
